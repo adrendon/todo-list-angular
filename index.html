@@ -354,7 +354,7 @@ footer a { color: #f39c12; }
         </div>
         <div class="inputContainer half last right">
           <input type="date" id="dueDate" class="taskDate" ng-model="newTaskDate">
-          <label for="dueDate">Fecha Máxima</label>
+          <label for="dueDate">Fecha Límite</label>
         </div>
         <div class="row">
           <button class="taskAdd" ng-click="addNew()"><i class="fa fa-plus icon"></i>Agregar Tareas</button>
@@ -398,7 +398,7 @@ app.controller('taskController', function($scope) {
         if ($scope.newTaskDate == null || $scope.newTaskDate == '') {
             $scope.taskItem.push({
                 description: $scope.newTask,
-                date: "No deadline",
+                date: "No hay fecha limite",
                 complete: false,
                 category: $scope.newTaskCategory.name
             })
