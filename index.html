@@ -256,13 +256,13 @@ button {
 
 .category-Personal { background: #2980b9; }
 
-.category-Work { background: #8e44ad; }
+.category-Trabajo { background: #8e44ad; }
 
-.category-School { background: #f39c12; }
+.category-Estudio { background: #f39c12; }
 
-.category-Cleaning { background: #16a085; }
+.category-Pendientes { background: #16a085; }
 
-.category-Other { background: #d35400; }
+.category-Otras { background: #d35400; }
 
 footer {
   text-align: center;
@@ -391,6 +391,7 @@ app.controller('taskController', function($scope) {
         {name: 'Personal'},
         {name: 'Trabajo'},
         {name: 'Estudio'},
+        {name: 'Pendientes'},
         {name: 'Otras'}
     ];
     $scope.newTaskCategory = $scope.categories;
